@@ -9,7 +9,7 @@ function BlogList(){
   return (
     <div className="blog-list-container">
       <ol className="list-order">
-        {posts.map((post) => <li className="list-item" key={posts.id}><BlogCard title = {post.title} description = {post.description}/></li>)}
+        {posts.map((post) => <li className="list-item" key={post.id}><BlogCard title = {post.title} description = {post.description}/></li>)}
       </ol>
     </div>
   )
