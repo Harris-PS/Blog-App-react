@@ -27,11 +27,12 @@ function CreateBlog() {
 
   return (
     <div className="create-container">
+      <h1 className="create-header">Create a blog post</h1>
       <form onSubmit={handleSubmit}>
         <label className="title-label">Enter Title :</label>
         <input type="text" value={title} onChange={(e)=>setTitle(e.target.value)}/>
         <label className="description-label">Enter Description :</label>
-        <input type="text" value={description} onChange={(e)=>setDescription(e.target.value)}/>
+        <input type="text" className="discription-input" value={description} onChange={(e)=>setDescription(e.target.value)}/>
         <button className="form-btn">Submit</button>
       </form>
     </div>
