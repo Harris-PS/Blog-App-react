@@ -5,10 +5,12 @@ import { BlogContext } from "../contexts/BlogContext.jsx"
 
 
 function BlogList(){
-  const items = useContext(BlogContext);
+  const { posts } = useContext(BlogContext);
   return (
     <div className="blog-list-container">
-      {items.map((post) => (<BlogCard key={post.id} title = {post.title} description = {post.description}/>))}
+      <ol className="list-order">
+        {posts.map((post) => <li className="list-item" key={posts.id}><BlogCard title = {post.title} description = {post.description}/></li>)}
+      </ol>
     </div>
   )
 }

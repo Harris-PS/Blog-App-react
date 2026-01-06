@@ -9,15 +9,10 @@ function BlogProvider({children}) {
     title: "Cooking in home",
     description: "Cooking at home is a rewarding way to enjoy healthier, tastier meals while saving money and building confidence in the kitchen. It's simpler than you might think, especially for beginners."
   },
-  {
-    id: 2,
-    title: "Cooking in home",
-    description: "Cooking at home is a rewarding way to enjoy healthier, tastier meals while saving money and building confidence in the kitchen. It's simpler than you might think, especially for beginners."
-  }
   ]);
   return (
     <>
-      <BlogContext.Provider value={posts}>
+      <BlogContext.Provider value={{posts, setPost}}>
         {children}
       </BlogContext.Provider>
     </>

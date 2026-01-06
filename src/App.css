@@ -42,6 +42,7 @@
   display: flex;
   gap: 20px;
   list-style: none;
+  cursor: pointer;
 }
 
 .create-container{
@@ -67,4 +68,21 @@ form input{
 
 .discription-input{
   padding: 20px 0;
+}
+
+.home-container{
+
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.blog-routes{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
