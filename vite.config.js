@@ -6,8 +6,10 @@ export default defineConfig({
   plugins: [
     react({
       babel: {
+        
         plugins: [['babel-plugin-react-compiler']],
       },
     }),
   ],
+  base: '/Blog-App-react/'
 })
