@@ -32,7 +32,7 @@ function CreateBlog() {
         <label className="title-label">Enter Title :</label>
         <input type="text" value={title} onChange={(e)=>setTitle(e.target.value)}/>
         <label className="description-label">Enter Description :</label>
-        <input type="text" className="discription-input" value={description} onChange={(e)=>setDescription(e.target.value)}/>
+        <input type="text" className="description-input" value={description} onChange={(e)=>setDescription(e.target.value)}/>
         <button className="form-btn">Submit</button>
       </form>
     </div>
