@@ -1,8 +1,8 @@
-function BlogCard(prams) {
+function BlogCard(props) {
   return (
     <div className='blog-card'>
-      <h3 className="posts-title">{prams.title}</h3>
-      <p className="posts-description">{prams.description}</p>
+      <h3 className="posts-title">{props.title}</h3>
+      <p className="posts-description">{props.description}</p>
     </div>
   )
 }
